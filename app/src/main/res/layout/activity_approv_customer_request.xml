@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".ApprovCustomerRequest">
+
+  <EditText
+      android:id="@+id/Req_id"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="200dp"
+      android:hint="Enter Request Id" />
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/Req_id"
+      android:id="@+id/DriverName"
+      android:hint="Enter Driver Name"/>
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/DriverName"
+      android:id="@+id/DriverNo"
+      android:hint="Enter Driver Contact no"/>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/DriverNo"
+      android:id="@+id/ApprovButton"
+      android:text="Approve"/>
+
+  <EditText
+      android:id="@+id/Req_no1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/ApprovButton"
+      android:layout_marginTop="100dp"
+      android:hint="Enter Request Id" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Req_no1"
+        android:id="@+id/RejectButton"
+        android:text="Reject"/>
+
+
+</RelativeLayout>

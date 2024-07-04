@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--the root view must be the DrawerLayout-->
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".CommonFrontPage"
+    tools:ignore="HardcodedText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Cab MANAGEMENT SYSTEM"
+            android:textSize="50sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="93dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:text="In urban landscapes, efficient transportation is crucial, especially during peak hours or urgent situations. Our Cab Management System ensures seamless and timely access to transportation services, optimizing routes and minimizing wait times. Whether it's commuting to work, navigating busy city streets, or ensuring prompt pick-ups, our system empowers users with reliability and efficiency. Designed to enhance mobility and convenience, it's your trusted companion for navigating the modern cityscape with ease."
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <!--this the navigation view which draws
+        and shows the navigation drawer-->
+    <!--include the menu created in the menu folder-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_bar"
+        app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
